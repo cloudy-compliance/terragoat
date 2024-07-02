@@ -142,3 +142,19 @@ resource "aws_rds_cluster" "app9-rds-cluster" {
     yor_trace            = "a0c98536-c751-4743-92f1-a106ce750249"
   }
 }
+
+resource "aws_rds_cluster" "app99-rds-cluster" {
+  cluster_identifier      = "app99-rds-cluster"
+  allocated_storage       = 10
+  backup_retention_period = 25
+  tags = {
+    git_commit           = "078fe74f6b96d887c245664fbd8cf676c92f20e5"
+    git_file             = "terraform/aws/rds.tf"
+    git_last_modified_at = "2021-12-08 23:26:32"
+    git_last_modified_by = "tron47@gmail.com"
+    git_modifiers        = "tron47"
+    git_org              = "matansha"
+    git_repo             = "terragoat"
+    yor_trace            = "a0c98536-c751-4743-92f1-a106ce750249"
+  }
+}
